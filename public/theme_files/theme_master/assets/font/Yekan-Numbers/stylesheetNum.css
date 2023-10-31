@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Yekan Number';
+    src: url('./Yekan-Numbers\ Regular.eot'); /* IE9 Compat Modes */
+    src: url('./Yekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./Yekan-Numbers\ Regular.woff2') format('woff2'), /* Modern Browsers */
+    url('./Yekan-Numbers\ Regular.woff') format('woff'), /* Modern Browsers */
+    url('./Yekan-Numbers\ Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./Yekan-Numbers\ Regular.svg') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* .section-content-box p, span, tbody, tr, td , li , strong{
+    font-family: 'Yekan' !important;
+}
+ */
+
+*{
+	 font-family: 'Yekan Number' ;
+}

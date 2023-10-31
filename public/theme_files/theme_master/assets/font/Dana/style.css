@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'dana';
+    src: url('./Dana-Light.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "dana";
+    src: url('./Dana-Medium.ttf');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "dana";
+    src: url('./Dana-Regular.ttf');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "dana";
+    src: url('./Dana-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "dana";
+    src: url('./Dana-Bold.ttf');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "dana";
+    src: url('./Dana-DemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "dana";
+    src: url('./Dana-ExtraBold.ttf');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+
+*{
+	 font-family: 'dana' !important;
+}

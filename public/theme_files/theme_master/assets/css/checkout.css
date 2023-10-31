@@ -1,0 +1,290 @@
+@font-face {
+    font-family: Dana;
+    src: url(../font/Dana/Dana-Medium.ttf);
+  }
+*{
+    font-family:'Dana' ;
+}
+html {
+    color:rgb(88, 88, 88);
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden;
+}
+body{
+    display: flex;
+}
+.mainDiv{
+    display: flex;
+    justify-content: end;
+}
+.sorat-hesab{
+    margin-right: 40px;
+    border: 2px solid rgb(88, 88, 88);
+    border-radius: 10px;
+    display: inline-block;
+    width: 400px;
+}
+.sorat-hesab .first{
+    padding: 10px 0;
+    border-bottom: 2px solid;
+}
+.first span{
+    margin: 15px 20px 0px;
+}
+.prices span{
+    display: flex;
+   justify-content:space-between;
+   font-size: large;
+   display: inline-block;
+    margin: 15px 20px 0px;
+
+}
+
+.price1 span:nth-of-type(1){
+    font-weight: 100;
+    font-size: large;
+    display: inline-block;
+    margin: 15px 20px 0px 110px;
+}
+.price1 span:nth-of-type(2){
+    font-weight: 100;
+    font-size: large;
+    margin-right: 50px;
+    display: inline-block;
+}
+.price2 span:nth-of-type(1){
+    font-weight: 100;
+    font-size: large;
+    display: inline-block;
+    margin: 15px 20px 0px 125px;
+}
+.price2 span:nth-of-type(2){
+    font-weight: 100;
+    font-size: large;
+    margin-right: 50px;
+    display: inline-block;
+}
+.price3 span:nth-of-type(1){
+    font-weight: 100;
+    font-size: large;
+    display: inline-block;
+    margin: 0px 20px 0px 135px;
+}
+.price3 span:nth-of-type(2){
+    font-weight: 100;
+    font-size: large;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.price4 span:nth-of-type(1){
+    font-weight: 100;
+    font-size:large;
+    display: inline-block;
+    margin: 0px 20px 0px 80px;
+}
+.price4 span:nth-of-type(2){
+    font-weight: 100;
+    margin-right: 65px;
+    font-size:large;
+    display: inline-block;
+}
+span.khat{
+    margin-top: 0px;
+    margin-right: 14px;
+    display: inline-block;
+    width: 370px;
+    height: 1px;
+    background-color:rgb(88, 88, 88) ;
+}
+.total span:nth-of-type(1){
+    font-weight: 100;
+    display: inline-block;
+    margin: 0px 20px 0px 15px;
+}
+.total span:nth-of-type(2){
+    font-weight: 100;
+    margin-right: 85px;
+    display: inline-block;
+}
+.conteiner{
+    position: relative;
+    margin-top: 30px;
+}
+.conteiner .checkBox{
+    position: absolute;
+    top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 6px solid rgb(28, 28, 68);
+}
+.conteiner span:nth-of-type(1){
+    position: absolute;
+    display: inline-block;
+    font-size: large;
+    right: 25px;top: 30px;
+}
+.btn{
+    position: absolute;
+    border-radius: 5px;
+    top: 80px;
+    background-color:  rgb(42, 42, 99);
+    color: white;
+    font-size: larger;
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    border: none;
+}
+.btn:checked{
+    background-color: rgb(98, 98, 251);
+}
+.addsress{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    margin-right: 80px;
+    margin-top: 0px;
+    width: 900px;
+    height: 200px;
+    border-radius: 10px;
+    border:2px solid ;
+}
+.mahal{
+    display: block;
+    margin: 20px 20px;
+    font-size: 1.5rem;
+}
+.baze{
+ font-size: 1.5rem;
+}
+.icon{
+    position: absolute;
+    margin-right: 20px;
+    display:inline-block;
+    margin-top: 70px;
+}
+.icon img{
+    display: inline-block;
+    width: 19px;
+    height: 20px;
+}
+.input-address{
+    display: none;
+    position: absolute;
+    color: black;
+    padding-right: 20px;
+    top: 110px;
+    right: 50px;
+    width: 800px;
+    height: 65px;
+    border: dashed  3px rgb(88, 88, 88);
+    border-radius: 10px;
+}
+
+.input-address:focus{
+    outline: none;
+}
+.dokme{
+    position: absolute;
+   top: 110px;
+   right:50px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 800px;
+    height: 65px;
+    border: dashed  3px rgb(88, 88, 88);
+}
+.dokme:focus{
+    outline: none;
+}
+.nahve{
+    padding: 20px 20px;
+    top: 240px;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    margin-right: 80px;
+    margin-top: 0px;
+    width: 900px;
+    height: 700px;
+    border-radius: 10px;
+    border:2px solid ;
+}
+.nahve span:nth-of-type(1){
+    font-size: 1.5rem;
+}
+form{
+    position: absolute;
+    top: 60px;
+}
+.nahve input:nth-of-type(1){
+    margin-top: 10px;
+}
+.nahve input:nth-of-type(2){
+    margin-top: 30px;
+}
+.nahve .baze{
+    position: absolute;
+    font-size: larger;
+    top: 180px;
+
+}
+.iphone{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 240px;
+}
+.goshi{
+    display:block;
+    position: absolute;
+    top: 300px;
+    right: 180px;
+    width: 500px;
+}    
+
+.goshi span:nth-of-type(1){
+    display: block;
+    font-size: 1.5rem;
+    color: black;
+}
+.goshi span{
+    display: inline-block;
+    margin-top: 10px;
+}
+.khat2{
+    position: absolute;
+    top: 100px;
+    left: -170px;
+    display: inline-block;
+    width: 800px;
+    height: 1px;
+    background-color: rgb(112, 112, 112);
+}
+.rozHafte{
+    position: absolute;
+    top: 130px;
+    right: -170px;
+    display: inline-block;
+}
+.rozHafte li{
+    padding:5px 6px;
+    user-select: none;
+    margin: 20px 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.roz{
+    user-select: none;
+    position: absolute;
+    top: 200px;
+    right: -150px;
+}
+.roz input:nth-of-type(2){
+    margin-bottom: 40px;
+}

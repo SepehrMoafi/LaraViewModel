@@ -1,0 +1,16 @@
+node_modules/*
+private_html
+.htpasswd/
+.env
+storage
+public/storage
+.idea
+vendor
+logs/
+stats/
+.DS_Store
+public/hot
+public/image
+public/zafreir_cms.sql
+__MACOSX/
+.phpunit.result.cache

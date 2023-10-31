@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>ادمین</title>
+	<!-- Favicon icon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+	<link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
+	<link href="vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Summernote -->
+	<link href="vendor/summernote/summernote.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!--*******************
+        Preloader start
+    ********************-->
+	<div id="preloader">
+		<div class="sk-three-bounce">
+			<div class="sk-child sk-bounce1"></div>
+			<div class="sk-child sk-bounce2"></div>
+			<div class="sk-child sk-bounce3"></div>
+		</div>
+	</div>
+	<!--*******************
+        Preloader end
+    ********************-->
+
+	<!--**********************************
+        Main wrapper start
+    ***********************************-->
+	<div id="main-wrapper">
+
+		<!--**********************************
+            Nav header start
+        ***********************************-->
+		<div class="nav-header">
+			<a href="index.html" class="brand-logo">
+				<img class="logo-abbr" src="images/logo.png" alt="">
+				<span style="
+				color: black;
+				margin-right: 10px;
+				font-weight: bold;
+				font-size: 20px;
+				">زفره مدیا</span>
+			</a>
+
+			<div class="nav-control">
+				<div class="hamburger">
+					<span class="line"></span><span class="line"></span><span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+            Nav header end
+        ***********************************-->
+
+		
+
+		<!--**********************************
+            Header start
+        ***********************************-->
+		<div class="header">
+			<div class="header-content">
+				<nav class="navbar navbar-expand">
+					<div class="collapse navbar-collapse justify-content-between">
+						<div class="header-left">
+							<div class="dashboard_bar">
+								<!-- <div class="input-group search-area d-lg-inline-flex d-none">
+									<div class="input-group-append">
+										<button class="input-group-text"><i class="flaticon-381-search-2"></i></button>
+									</div>
+									<input type="text" class="form-control" placeholder="جستجو...">
+								</div> -->
+							</div>
+						</div>
+						<ul class="navbar-nav header-right">
+							
+							<li class="nav-item dropdown notification_dropdown">
+								<a class="nav-link  ai-icon" href="#" role="button" data-toggle="dropdown">
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M12.6001 4.3008V1.4C12.6001 0.627199 13.2273 0 14.0001 0C14.7715 0 15.4001 0.627199 15.4001 1.4V4.3008C17.4805 4.6004 19.4251 5.56639 20.9287 7.06999C22.7669 8.90819 23.8001 11.4016 23.8001 14V19.2696L24.9327 21.5348C25.4745 22.6198 25.4171 23.9078 24.7787 24.9396C24.1417 25.9714 23.0147 26.6 21.8023 26.6H15.4001C15.4001 27.3728 14.7715 28 14.0001 28C13.2273 28 12.6001 27.3728 12.6001 26.6H6.19791C4.98411 26.6 3.85714 25.9714 3.22014 24.9396C2.58174 23.9078 2.52433 22.6198 3.06753 21.5348L4.20011 19.2696V14C4.20011 11.4016 5.23194 8.90819 7.07013 7.06999C8.57513 5.56639 10.5183 4.6004 12.6001 4.3008ZM14.0001 6.99998C12.1423 6.99998 10.3629 7.73779 9.04973 9.05099C7.73653 10.3628 7.00011 12.1436 7.00011 14V19.6C7.00011 19.817 6.94833 20.0312 6.85173 20.2258C6.85173 20.2258 6.22871 21.4718 5.57072 22.7864C5.46292 23.0034 5.47412 23.2624 5.60152 23.4682C5.72892 23.674 5.95431 23.8 6.19791 23.8H21.8023C22.0445 23.8 22.2699 23.674 22.3973 23.4682C22.5247 23.2624 22.5359 23.0034 22.4281 22.7864C21.7701 21.4718 21.1471 20.2258 21.1471 20.2258C21.0505 20.0312 21.0001 19.817 21.0001 19.6V14C21.0001 12.1436 20.2623 10.3628 18.9491 9.05099C17.6359 7.73779 15.8565 6.99998 14.0001 6.99998Z"
+											fill="#3E4954" />
+									</svg>
+									<span class="badge light text-white bg-primary rounded-circle">12</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right">
+									<div id="DZ_W_Notification1" class="widget-media dz-scroll p-3 height380">
+										<ul class="timeline">
+											<li>
+												<div class="timeline-panel">
+													<div class="media ml-2">
+														<img alt="image" width="50" src="images/avatar/1.jpg">
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">دکتر سالتند تصویر ارسال کرد</h6>
+														<small class="d-block">29 آذر 1399- 02:26 بعدازظهر</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel">
+													<div class="media ml-2 media-info">
+														ک
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">گزارش با موفقیت ایجاد شد</h6>
+														<small class="d-block">29 آذر 1399- 02:26 بعدازظهر</small>
+													</div>
+												</div>
+											</li>
+											
+											<li>
+												<div class="timeline-panel">
+													<div class="media ml-2">
+														<img alt="image" width="50" src="images/avatar/1.jpg">
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">دکتر سالتند تصویر ارسال کرد</h6>
+														<small class="d-block">29 آذر 1399- 02:26 بعدازظهر</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel">
+													<div class="media ml-2 media-danger">
+														ک
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">گزارش با موفقیت ایجاد شد</h6>
+														<small class="d-block">29 آذر 1399- 02:26 بعدازظهر</small>
+													</div>
+												</div>
+											</li>
+											
+										</ul>
+									</div>
+									<!-- <a class="all-notification" href="#">مشاهده همه اطلاعیه‌ها <i class="ti-arrow-left"></i></a> -->
+								</div>
+							</li>
+							
+							<li class="nav-item dropdown header-profile">
+								<a class="nav-link" href="javascript:void(0)" role="button" data-toggle="dropdown">
+									<div class="header-info">
+										<span class="text-black">سلام,<strong>علی</strong></span>
+										<p class="fs-12 mb-0">ادمین</p>
+									</div>
+									<img src="images/profile/profile.png" width="20" alt="" />
+								</a>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a href="" class="dropdown-item ai-icon">
+										<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18"
+											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round">
+											<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+											<circle cx="12" cy="7" r="4"></circle>
+										</svg>
+										<span class="ml-2">پروفایل</span>
+									</a>
+								
+									<a href="" class="dropdown-item ai-icon">
+										<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18"
+											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round">
+											<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+											<polyline points="16 17 21 12 16 7"></polyline>
+											<line x1="21" y1="12" x2="9" y2="12"></line>
+										</svg>
+										<span class="ml-2">خروج</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+		<!--**********************************
+            Sidebar start
+        ***********************************-->
+		<div class="deznav">
+			<div class="deznav-scroll">
+				<ul class="metismenu" id="menu">
+					
+					<li>
+						<a href="index.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-networking"></i>
+							<span class="nav-text">داشبرد</span>
+						</a>
+					</li>
+
+
+					<li>
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="fa fa-book"></i>
+							<span class="nav-text">مدیریت مقالات</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="posts.html">لیست مقالات</a></li>
+							<li><a href="add-post.html">افزودن مقاله جدید</a></li>
+							<li><a href="posts-categories.html">دسته بندی مقالات</a></li>
+						</ul>
+					</li>
+
+
+					<li>
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="fa fa-podcast"></i>
+							<span class="nav-text">مدیریت پادکست ها</span>
+						</a>
+
+						<ul aria-expanded="false">
+							<li><a href="podcasts.html">لیست پادکست ها</a></li>
+							<li><a href="add-podcasts.html">افزودن پادکست جدید</a></li>
+							<li><a href="posts-categories.html">دسته بندی </a></li>
+						</ul>
+
+					</li>
+
+
+					<li>
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="fa fa-video-camera"></i>
+							<span class="nav-text">مدیریت ویدیو ها</span>
+						</a>
+
+						<ul aria-expanded="false">
+							<li><a href="videos.html">لیست ویدیو ها</a></li>
+							<li><a href="add-videos.html">افزودن ویدیو جدید</a></li>
+							<li><a href="posts-categories.html">دسته بندی </a></li>
+						</ul>
+					</li>
+
+
+					<li>
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="fa fa-server"></i>
+							<span class="nav-text">مدیریت محصولات</span>
+						</a>
+
+						<ul aria-expanded="false">
+							<li><a href="products.html">لیست محصولات </a></li>
+							<li><a href="add-products.html">افزودن محصول جدید</a></li>
+							<li><a href="posts-categories.html">دسته بندی </a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="fa fa-users"></i>
+							<span class="nav-text">تامین کنندگان</span>
+						</a>
+
+						<ul aria-expanded="false">
+							<li><a href="suppliers.html">لیست تامین کنندگان </a></li>
+							<li><a href="add-suppliers.html">افزودن تامین کننده جدید</a></li>
+						</ul>
+					</li>
+
+					<li>
+
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="flaticon-381-layer-1"></i>
+							<span class="nav-text">پیش فاکتور ها</span>
+						</a>
+
+						<ul aria-expanded="false">
+							<li><a href="factor.html">درانتظار برسی </a></li>
+							<li><a href="factor.html">ثبت شده </a></li>
+						</ul>
+
+					</li>
+
+
+					<li>
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="fa fa-th-list"></i>
+							<span class="nav-text">مدیریت برندها</span>
+						</a>
+
+						<ul aria-expanded="false">
+							<li><a href="brands.html">لیست برندها </a></li>
+							<li><a href="add-brands.html">افزودن برند جدید</a></li>
+						</ul>
+					</li>
+
+					<li>
+
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="flaticon-381-user"></i>
+							<span class="nav-text">مدیریت کارشناسان</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="employee.html">لیست کارشناسان</a></li>
+							<li><a href="add-employee.html"> افزودن کارشناس </a></li>
+						</ul>
+
+					</li>
+
+					<li>
+
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="fa fa-money"></i>
+							<span class="nav-text">مدیریت سفارشات</span>
+						</a>
+
+						<ul aria-expanded="false">
+							<li><a href="orders.html">لیست سفارشات  </a></li>
+							<li><a href="payments.html">لیست پرداخت ها</a></li>
+						</ul>
+
+					</li>
+
+
+					<li>
+
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="flaticon-381-layer-1"></i>
+							<span class="nav-text">مدیریت آگهی ها</span>
+						</a>
+
+						<ul aria-expanded="false">
+							<li><a href="ads.html">لیست آگهی ها  </a></li>
+							<li><a href="add-ads.html">افزودن آگهی  </a></li>
+						</ul>
+
+					</li>
+
+
+					<li>
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="flaticon-381-user"></i>
+							<span class="nav-text">مدیریت کاربران</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="users.html">لیست کاربران</a></li>
+							<li><a href="add-user.html">افزودن کاربر</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="inbox.html" class="ai-icon" aria-expanded="false">
+							<i class="fa fa-inbox"></i>
+							<span class="nav-text">پیام های دریافتی</span>
+						</a>
+					</li>
+
+					<li>
+						<a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+							<i class="flaticon-381-user"></i>
+							<span class="nav-text">مدیریت صفحات</span>
+						</a>
+						<ul aria-expanded="false">
+							<li><a href="contactus.html">تماس با ما</a></li>
+							<li><a href="aboutus.html">درباره ما</a></li>
+							<li><a href="services.html">صفحه خدمات </a></li>
+							<li><a href="services.html">صفحه خدمات مشتریان</a></li>
+						</ul>
+					</li>
+
+
+					<li>
+						<a href="setting.html" class="ai-icon" aria-expanded="false">
+							<i class="flaticon-381-settings-7"></i>
+							<span class="nav-text">تنظیمات سایت</span>
+						</a>
+					</li>
+
+				</ul>
+
+				<div class="copyright">
+					<p> ارائه توسط <span class="heart"></span> ZafreMedia </p>
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+            Sidebar end
+        ***********************************-->
+
+		<!--**********************************
+            Content body start
+        ***********************************-->
+		<div class="content-body">
+			<!-- row -->
+			<div class="container-fluid">
+				<div class="form-head mb-4">
+					<h2 class="text-black font-w600 mb-0"> مقاله</h2>
+				</div>
+				<div class="row">
+					
+					<div class="col-xl-12 col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+								<p></p>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    <form>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label>عنوان </label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+											<div class="form-group col-md-6">
+												<label>توضیحات کوتاه  </label>
+												<input type="text" class="form-control" placeholder="">
+											</div>
+
+											<div class="form-group col-md-6">
+												<label>تصویر شاخص </label>
+												<input type="file" class="form-control" placeholder="">
+											</div>
+
+											<div class="form-group col-md-6">
+												<label>یرند </label>
+												<select class="form-control" name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</div>
+
+											<div class="form-group col-md-6">
+												<label>دسته یندی </label>
+												<select class="form-control" name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</div>
+
+											<div class="form-group col-md-6">
+												<label>کالا مرتبط </label>
+												<select class="form-control" name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</div>
+
+
+                                            <div class="form-group col-md-12">
+                                                <label>متن</label>
+                                                <div class="summernote"></div>
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        
+                                        <button type="submit" class="btn btn-primary"> ثبت </button>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+				</div>
+			</div>
+		</div>
+		<!--**********************************
+            Content body end
+        ***********************************-->
+
+		<!--**********************************
+            Footer start
+        ***********************************-->
+		<div class="footer">
+			<div class="copyright">
+				<p>کپی رایت © ارائه توسط <a href="https://zafre.com">ZafreMedia</a> 1401</p>
+			</div>
+		</div>
+		<!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+	</div>
+	<!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+	<!--**********************************
+        Scripts
+    ***********************************-->
+	<!-- Required vendors -->
+	<script src="vendor/global/global.min.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="vendor/chart.js/Chart.bundle.min.js"></script>
+	<script src="js/custom.min.js"></script>
+	<script src="js/deznav-init.js"></script>
+	<!-- Datatable -->
+	<script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+
+    <script src="js/plugins-init/datatables.init.js"></script>
+
+	<script>
+		(function ($) {
+			var table = $('#example5').DataTable({
+				searching: false,
+				paging: true,
+				select: false,
+				//info: false,         
+				lengthChange: false
+
+			});
+			$('#example tbody').on('click', 'tr', function () {
+				var data = table.row(this).data();
+
+			});
+		})(jQuery);
+	</script>
+
+	<!-- Summernote -->
+	<script src="vendor/summernote/js/summernote.min.js"></script>
+	<!-- Summernote init -->
+	<script src="js/plugins-init/summernote-init.js"></script>
+
+
+</body>
+
+</html>
